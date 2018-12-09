@@ -1,10 +1,21 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'address-book-challenge';
+  title = 'app';
+
+    video = {
+    title: 'Despacito',
+    views: 2,
+    liked: true
+  }
+
+  handleClick(){
+    console.log('Someone clicked on button on the template :-)')
+  }
 }
